@@ -1,7 +1,7 @@
 # Common settings for use alongside language-specific attributes.
 
-# Detect text files and normalize repository content to LF.
-*          text=auto
+# Detect text files and use LF in the repository and working tree.
+*          text=auto eol=lf
 
 # Documents
 *.bibtex   text diff=bibtex
@@ -21,7 +21,7 @@
 *.adoc     text
 *.textile  text
 *.mustache text
-*.csv      text eol=crlf
+*.csv      text eol=lf
 *.tab      text
 *.tsv      text
 *.txt      text
@@ -47,9 +47,9 @@
 *.zsh      text eol=lf
 
 # Windows scripts
-*.bat      text eol=crlf
-*.cmd      text eol=crlf
-*.ps1      text eol=crlf
+*.bat      text eol=lf
+*.cmd      text eol=lf
+*.ps1      text eol=lf
 
 # Container definitions
 Dockerfile    text eol=lf

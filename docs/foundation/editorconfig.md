@@ -19,7 +19,6 @@ The repository's `.editorconfig` is discovered automatically when an editor open
 | --- | --- |
 | All files | UTF-8, LF, final newline, trimmed trailing whitespace, spaces, two-space indentation, and a 120-character line-length preference |
 | Markdown | Four-space indentation for nested Markdown content |
-| Batch, CMD, and PowerShell | CRLF line endings |
 | Dockerfile | Four-space indentation |
 
 `max_line_length` is an editor hint; support varies between editors and it is not a hard repository check.
@@ -29,7 +28,7 @@ The repository's `.editorconfig` is discovered automatically when an editor open
 - New files begin with predictable encoding and line endings.
 - Tabs and spaces do not change with personal editor settings.
 - Files end cleanly with one newline and no accidental trailing spaces.
-- Windows scripts retain their expected CRLF endings while the rest of the repository defaults to LF.
+- Windows scripts use the same LF endings as the rest of the repository.
 - Formatting changes stay focused on meaningful content.
 
 The dev container installs the [EditorConfig extension for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig). Other editors may support EditorConfig directly or through a plugin; consult the official [EditorConfig editor list](https://editorconfig.org/#pre-installed).
