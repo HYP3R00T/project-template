@@ -15,7 +15,7 @@ Official references:
 - [MIT License — Choose a License](https://choosealicense.com/licenses/mit/)
 - [Licensing a repository — GitHub Docs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
 
-This template is distributed under the [MIT License](https://github.com/HYP3R00T/devcontainer-template/blob/main/LICENSE).
+This template is distributed under the [MIT License](https://github.com/HYP3R00T/project-template/blob/main/LICENSE).
 
 ## Why this template uses MIT
 
