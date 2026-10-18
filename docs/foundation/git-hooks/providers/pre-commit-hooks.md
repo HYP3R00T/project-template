@@ -40,10 +40,10 @@ Filename failures require a rename. Executable failures require either the corre
 | Hook | What it does | Failure behavior |
 | --- | --- | --- |
 | `end-of-file-fixer` | Ensures exactly one final newline | Modifies the file; review and stage the fix |
-| `mixed-line-ending` | Rejects a mixture of LF and CRLF within one file | Reports the file; normalize it according to `.gitattributes` |
+| `mixed-line-ending` | Converts text line endings to LF | Modifies the file; review and stage the fix |
 | `trailing-whitespace` | Removes spaces and tabs at line ends | Modifies the file; review and stage the fix |
 
-The mixed-line-ending hook uses `--fix=no`. It detects inconsistency without overriding the repository policy: Unix-oriented text uses LF, while Windows scripts intentionally use CRLF.
+The mixed-line-ending hook uses `--fix=lf`. It converts CRLF and mixed line endings to LF, including in Windows scripts, matching `.gitattributes` and `.editorconfig`.
 
 ## Repository protection
 

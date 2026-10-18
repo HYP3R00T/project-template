@@ -15,10 +15,10 @@ icon: lucide/git-branch
 
 | Category | Behavior |
 | --- | --- |
-| General text | Automatically detected and normalized in Git |
+| General text | Automatically detected, stored, and checked out with LF |
 | Documentation and structured text | Treated as text, with useful diff drivers where available |
 | Unix scripts and container files | Stored and checked out with LF |
-| Batch, CMD, and PowerShell scripts | Stored as text and checked out with CRLF |
+| Batch, CMD, and PowerShell scripts | Stored and checked out with LF |
 | Images and archives | Treated as binary |
 | Patch files | Left untouched so exact line endings are preserved |
 | Repository metadata | Excluded from generated Git archives where configured |
@@ -31,7 +31,7 @@ Without repository attributes, a contributor's `core.autocrlf` and operating sys
 
 - `.editorconfig` guides the editor before Git sees a change.
 - `.gitattributes` defines Git's tracked representation and checkout behavior.
-- `prek` detects mixed endings and other problems before Git operations complete.
+- `prek` converts text line endings to LF and detects other problems before Git operations complete.
 
 Inspect effective attributes with:
 
