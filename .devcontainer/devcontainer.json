@@ -1,5 +1,5 @@
 {
-	"name": "devcontainer-template",
+	"name": "project-template",
 	"build": {
 		"context": ".",
 		"dockerfile": "Dockerfile"
